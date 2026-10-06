@@ -23,10 +23,9 @@ pipeline {
 
     post {
         always {
-            steps {
-                echo 'Pipeline finished. Cleaning workspace...'
-                cleanWs()
-            }
+            // FIXED: Removed the 'steps' wrapper block entirely
+            echo 'Pipeline finished. Cleaning workspace successfully...'
+            cleanWs() 
         }
     }
 }
