@@ -28,7 +28,7 @@ pipeline {
                     // npx downloads and executes the latest scanner instantly in the workspace
                     sh """
                         npx sonar-scanner \
-                        -Dsonar.organization=AriChow1999 \
+                        -Dsonar.organization=arichow1999 \
                         -Dsonar.projectKey=AriChow1999_node-hello-1 \
                         -Dsonar.projectName="node-hello-1" \
                         -Dsonar.sources=. \
