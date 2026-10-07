@@ -24,7 +24,7 @@ pipeline {
                 echo 'Starting Dynamic SonarQube Scanner via npx...'
                 
                 // Matches the configuration name you saved in Manage Jenkins -> System
-                withSonarQubeEnv('SonarQube-Server') {
+                withSonarQubeEnv('SonarQube') {
                     // npx downloads and executes the latest scanner instantly in the workspace
                     sh """
                         npx sonar-scanner \
